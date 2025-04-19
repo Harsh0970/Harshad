@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhokare Harshad Santosh - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a2d6cfb2f5.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #f9fbfc, #e3f2fd);
+      color: #1f1f1f;
+    }
+
+    header {
+      background: #1e2a78;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffde59;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    #home {
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #1e2a78;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #1e2a78;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #1e2a78;
+      text-align: center;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .skill-box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 180px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-box img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      background: #eee;
+      height: 10px;
+      border-radius: 20px;
+      margin: 10px 0;
+    }
+
+    .progress-bar {
+      height: 10px;
+      background: #00b894;
+      border-radius: 20px;
+      transition: width 0.5s;
+    }
+
+    .resume-section {
+      margin-bottom: 30px;
+    }
+
+    .resume-section ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .view-btn {
+      color: #1e2a78;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .view-btn:hover {
+      text-decoration: underline;
+    }
+
+    #contact {
+      text-align: center;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #1e2a78;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #00b894;
+    }
+
+    footer {
+      background: #1e2a78;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .skill-box {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <img src="harsh.jpg" alt="Harshad Dhokare" class="profile-pic" />
+    <h1>Dhokare Harshad Santosh</h1>
+    <p>Aspiring AI Engineer | 1st Year AIML Student | Passionate about Tech & Innovation</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a first-year AIML student at MIT Academy of Engineering, Pune. I’m passionate about technology,
+      especially artificial intelligence, drones, and cybersecurity. I enjoy learning Python, exploring cloud platforms
+      like AWS, and working on web development and database projects.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <img src="html.jpg" alt="HTML" />
+        <h4>HTML</h4>
+        <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+      </div>
+      <div class="skill-box">
+        <img src="css.jpg" alt="CSS" />
+        <h4>CSS</h4>
+        <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+      </div>
+      <div class="skill-box">
+        <img src="c.jpg" alt="C/C++" />
+        <h4>C/C++</h4>
+        <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+      </div>
+      <div class="skill-box">
+        <img src="python.jpg" alt="Python" />
+        <h4>Python</h4>
+        <div class="progress"><div class="progress-bar" style="width: 50%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="resume-section">
+      <h3>Education</h3>
+      <ul>
+        <li><span class="highlight">B.Tech AIML:</span> MITAOE, Pune (Currently Pursuing)</li>
+        <li><span class="highlight">12th Grade:</span> A.P. Patel Jr. College – 73.33%</li>
+        <li><span class="highlight">10th Grade:</span> Prabhakarrao Bhor Vidyalaya Ambi Khalsa - 92%</li>
+      </ul>
+    </div>
+    <div class="resume-section">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Oracle SQL – Great Learning <a href="Oracle.jpg" target="_blank" class="view-btn">View</a></li>
+        <li>Python Essentials 1 – Cisco <a href="essential 1.jpg" target="_blank" class="view-btn">View</a></li>
+        <li>Python Essentials 2 – Cisco <a href="essentials 2.jpg" target="_blank" class="view-btn">View</a></li>
+      </ul>
+    <div class="resume-section"></div>        
+      <h3>Achievement</h3>
+      <ul>
+        <li>MHT-CET - 99.66 percentile</li>
+        <li> NDA-2 2024</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: 202401110024@mitaoe.ac.in</p>
+    <p>Phone: +91 9359348825</p>
+    <div class="social-links">
+      <a href="https://github.com/yatharth161" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/yatharth.hingane?igsh=amU4a2wyNnoxbXRv" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/yatharth-hingane-195305328/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dhokare Harshad Santosh. All rights reserved.</p>
+  </footer>
+</body>
+</html>
